@@ -3,7 +3,13 @@ import joblib
 import numpy as np
 
 # 📌 Cargar el modelo
-model = joblib.load(".\models\modelo_entrenado.pkl")
+
+#Entorno de desarrollo
+# model = joblib.load(".\models\modelo_entrenado.pkl")
+
+
+#Entorno de producción
+model = joblib.load("models/modelo_entrenado.pkl")
 
 st.title("Predicción con Modelo de Regresión Logística")
 
